@@ -1,16 +1,16 @@
 {
-	"project": "Example",
+	"project": "AEM EDS demo",
 	"plugins": [
 	  {
 		"id": "library",
 		"title": "Library",
-		"environments": ["edit"],
+		"environments": ["dev", "edit"],
 		"url": "/tools/sidekick/library.html",
 		"includePaths": ["**.docx**"]
-	  }
+	  },
 	  {
 		"id": "asset-library",
-		"title": "My Assets",
+		"title": "AEM Assets Library",
 		"environments": [
 		"edit"
 		],
@@ -19,7 +19,15 @@
 		"includePaths": [ "**.docx**" ],
 		"passConfig": true,
 		"paletteRect": "top: 50px; bottom: 10px; right: 10px; left: auto; width:400px; height: calc(100vh - 60px)"
-	}
+	},
+	{
+		"id": "generate-variations",
+		"title": "Generate Variations",
+		"url": "https://experience.adobe.com/aem/generate-variations",
+		"passConfig": true,
+		"environments": ["preview","live", "edit"],
+		"includePaths": ["**.docx**"]
+	  }
 	]
   }
   
